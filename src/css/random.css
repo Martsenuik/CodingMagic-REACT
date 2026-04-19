@@ -1,0 +1,120 @@
+.random-box {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.title-random {
+    color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        padding-top: 36px;
+        padding-bottom: 36px;
+}
+
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: 0.5px solid #000000;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.random_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 36px;
+}
+
+.random-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.box-input2 {
+    margin-left: 250px;
+}
+
+.random-input {
+    padding: 10px;
+    width: 150px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.63px;
+}
+
+.random-btn {
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    height: 40px;
+    left: -40px;
+    bottom: -4px;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    height: 35px;
+    left: -40px;
+    bottom: -4px;
+}
+
+.random-result {
+    font-size: 12px;
+    line-height: 14.63px;
+    font-size: 12px;
+    line-height: 14.63px;
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.line-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-line {
+    width: 536px !important;
+    border: 0.5px solid #000000 !important;
+}

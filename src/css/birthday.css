@@ -1,0 +1,55 @@
+.birthday {}
+
+.title-birthday {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.birthday-input {
+    margin-right: 55px;
+    padding: 10px 30px 10px 10px;
+    gap: 10px;
+    width: 215px;
+    font-size: 12px;
+    height: 42px;
+}
+
+.box-input1 {
+    padding-right: 230px;
+}
+
+.birthday-btn {
+    left: -96px !important;
+}
+
+.b-day-btn {
+    height: 42px !important;
+    bottom: -6px !important;
+}
+
+.birthday-text {
+    color: #039900;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.birthday-div {
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.line {
+    width: 536px;
+    stroke-width: 1px;
+    color: #000;
+}
