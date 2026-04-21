@@ -1,4 +1,4 @@
-import "../css/popular.css";
+import "../../components/popular/popular.css";
 
 export const Popular = () => {
   return (

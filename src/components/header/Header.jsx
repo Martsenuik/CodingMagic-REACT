@@ -1,7 +1,7 @@
-import "../css/header.css";
+import "../../components/header/header.css";
 import { useState } from "react";
-import logo from "../images/svg/logo.svg";
-import svgDropDownArrow from "../images/svg/arrow.svg";
+import logo from "../../images/svg/logo.svg";
+import svgDropDownArrow from "../../images/svg/arrow.svg";
 
 export const Header = ({ dropDownData }) => {
   const [openMenu, setOpenMenu] = useState(false);

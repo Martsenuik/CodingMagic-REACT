@@ -1,5 +1,5 @@
-import svgSearch from "../images/svg/search.svg";
-import "../css/random.css";
+import svgSearch from "../../images/svg/Search.svg";
+import "../../components/random/random.css";
 import { useState } from "react";
 
 export const Random = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import svgSearch from "../images/svg/search.svg";
-import "../css/birthday.css";
+import svgSearch from "../../images/svg/Search.svg";
+import "../../components/birthday/birthday.css";
 
 export const Birthday = () => {
   const [birthdayYear, setBirthdayYear] = useState("");
