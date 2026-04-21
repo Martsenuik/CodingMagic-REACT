@@ -1,6 +1,7 @@
-import svgSearch from "../../images/svg/Search.svg";
 import "../../components/random/random.css";
 import { useState } from "react";
+import { handleChange } from "../../helpers/getValue";
+import { INPUTandBTN } from "../INPUTandBTN";
 
 export const Random = () => {
   const [color, setColor] = useState("");
@@ -9,9 +10,8 @@ export const Random = () => {
 
   const [secretNumber] = useState(() => Math.floor(Math.random() * 100) + 1);
 
-  const handleChangeGuessedNumber = (event) => {
-    setGuessedNumber(event.target.value);
-  };
+  const handleChangeGuessedNumber = (event) =>
+    handleChange(setGuessedNumber, event);
 
   const checkGuess = () => {
     if (!guessedNumber) {
@@ -38,18 +38,11 @@ export const Random = () => {
       <h2 className="title-random">Вгадай число, яке загадав комп’ютер</h2>
 
       <div className="random-box">
-        <div className="guess-game-input-box box-input box-input2">
-          <input
-            type="number"
-            placeholder="Введіть число"
-            value={guessedNumber}
-            onChange={handleChangeGuessedNumber}
-          />
-
-          <button className="random-btn" onClick={checkGuess}>
-            <img src={svgSearch} alt="Search" />
-          </button>
-        </div>
+        <INPUTandBTN
+          inputValue={guessedNumber}
+          handleChange={handleChangeGuessedNumber}
+          onClickBtn={checkGuess}
+        />
 
         <div className="result-box">
           <p className="random-result" style={{ color }}>

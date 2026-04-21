@@ -1,15 +1,15 @@
 import { useState } from "react";
 import svgSearch from "../../images/svg/Search.svg";
 import "../../components/birthday/birthday.css";
+import { handleChange } from "../../helpers/getValue";
+import { INPUTandBTN } from "../INPUTandBTN";
 
 export const Birthday = () => {
   const [birthdayYear, setBirthdayYear] = useState("");
   const [result, setResult] = useState("");
   const [color, setColor] = useState("");
 
-  const handleChangeName = (event) => {
-    setBirthdayYear(event.target.value);
-  };
+  const handleChangeName = (event) => handleChange(setBirthdayYear, event);
 
   const WhichIsYear = () => {
     const year = Number(birthdayYear);
@@ -28,22 +28,11 @@ export const Birthday = () => {
       <h2 className="title-birthday">Перевір в який рік ти народився</h2>
 
       <div className="birthday-div">
-        <div className="box-input">
-          <input
-            className="birthday-input"
-            type="number"
-            placeholder="Введіть рік народження"
-            value={birthdayYear}
-            onChange={handleChangeName}
-          />
-
-          <button
-            className="birthday-btn random-btn b-day-btn"
-            onClick={WhichIsYear}
-          >
-            <img src={svgSearch} className="search-btn" alt="search" />
-          </button>
-        </div>
+        <INPUTandBTN
+          inputValue={birthdayYear}
+          handleChange={handleChangeName}
+          onClickBtn={WhichIsYear}
+        />
 
         <p className="birthday-text" style={{ color }}>
           {result}
