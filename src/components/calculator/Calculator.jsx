@@ -7,7 +7,12 @@ export const Calculator = () => {
   //   const [inputNumber2, setNumber2] = useState("");
   //   const [result, setResult] = useState("");
 
-  //   const handleChangeNum1 = (event) => handleChange(setNumber1, event);
+  //   const handleChangeNum1 = (event) => {
+  //     setNumber1(event.target.value);
+  //   };
+  //   const handleChangeNum2 = (event) => {
+  //     setNumber2(event.target.value);
+  //   };
   //   const handleChangeNum2 = (event) => handleChange(setNumber2, event);
 
   //   const CalculateNumbers = () => {};
