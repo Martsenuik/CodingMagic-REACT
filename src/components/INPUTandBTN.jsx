@@ -6,7 +6,7 @@ export const INPUTandBTN = ({ inputValue, handleChange, onClickBtn }) => {
       <input
         className="birthday-input"
         type="number"
-        placeholder="Введіть рік народження"
+        placeholder="Введіть значення"
         value={inputValue}
         onChange={handleChange}
       />
