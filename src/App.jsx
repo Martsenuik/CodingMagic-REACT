@@ -9,6 +9,7 @@ import { Football } from "./components/football/Football";
 import { Numbers } from "./components/numbers/Numbers";
 import { Footer } from "./components/footer/Footer";
 import { useEffect, useState } from "react";
+import { Calculator } from "./components/calculator/Calculator";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -57,6 +58,8 @@ function App() {
       <Popular />
       <Birthday />
       <Random />
+      <Calculator />
+
       <TimeCalculator />
       <Football />
       <Numbers />

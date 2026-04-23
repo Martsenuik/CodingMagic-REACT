@@ -1,0 +1,35 @@
+.calculator{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+            gap: 40px;
+}
+
+.title{
+        color: #000;
+            font-family: "Montserrat Alternates";
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            padding-top: 36px;
+            padding-bottom: 36px;
+}
+
+.input{
+width: 120px;
+    border-radius: 90px;
+}
+
+.boxSymbols{
+    display: flex;
+        justify-content: center;
+}
+
+.symbol{
+    background-color: black;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
